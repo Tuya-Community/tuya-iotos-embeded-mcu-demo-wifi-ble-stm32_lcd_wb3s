@@ -84,7 +84,6 @@
 
 
 
-
 ### DP点相关
 
 + 上报dp点处理: mcu_dp_value_update()
@@ -95,13 +94,15 @@
 | value  | DP数据                                                       |
 | Return | SUCCESS: 成功  ERROR: 失败                                   |
 
-+ MCU gets the dp value of the bool type:mcu_get_dp_download_bool()
++ mcu获取bool型下发dp值: mcu_get_dp_download_bool()
 
-| function name | unsigned char mcu_get_dp_download_bool(const unsigned char value[],unsigned short len) |
-| ------------- | ------------------------------------------------------------ |
-| value[]       | DP data buffer address                                       |
-| len           | DP data length                                               |
-| Return        | The current values of dp                                     |
+| 函数名  | unsigned char mcu_get_dp_download_bool(const unsigned char value[],unsigned short len) |
+| ------- | ------------------------------------------------------------ |
+| value[] | DP数据缓冲区地址                                             |
+| len     | DP数据长度                                                   |
+| Return  | 当前DP值                                                     |
+
+
 
 ### I/O 列表 
 
@@ -110,7 +111,7 @@
 | PA9 TXD  | PB6 I2C1_SCL | PB10 I2C2_SCL  |              Timer 3 interrupt              | PA9 TXD  | PA2 TXD | PC4 TXD |             PC13             |
 | PA10 RXD | PB7 I2C1_SDA | PB11  I2C2_SDA | Implement Different Tasks At DifferentTimes | PA10 RXD | PA3 RXD | PC5 RXD | Network Configuration Button |
 
-### 
+
 
 ## 相关文档
 
